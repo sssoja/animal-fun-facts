@@ -12,7 +12,7 @@ const background = (
 const displayFact = e => {
   const selectedAnimal = e.target.alt;
   const animalInfo = animals[selectedAnimal];
-  const index = Math.floor(Math.random(animalInfo.facts.length));
+  const index = Math.floor(Math.random() * animalInfo.facts.length);
   const funFact = animalInfo.facts[index];
   document.getElementById("fact").innerHTML = funFact;
 };
